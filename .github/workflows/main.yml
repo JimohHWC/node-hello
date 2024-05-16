@@ -1,9 +1,6 @@
 name: CI/CD to Huawei SWR and CCE
 
 on:
-  push:
-    branches:
-      - master  
   workflow_dispatch:
   
 jobs:
