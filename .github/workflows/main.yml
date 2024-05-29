@@ -7,8 +7,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:        
-      # - name: Checkout code
-      #   uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
         
       - name: get CCE Cluster Credentials
         uses: JimohHWC/cce-credential-action@v1.0.0
