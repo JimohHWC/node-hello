@@ -17,11 +17,11 @@ jobs:
           sk: ${{ secrets.SECRETACCESSKEY }}
           region: "af-south-1"
           project_id: "eecc7ec81ad346adbcde0a07fa343cb0"
-          cluster_id: "8817579e-f98a-11ee-990c-0255ac1000eb"
+          cluster_id: "f6815f56-1dba-11ef-a1a7-0255ac1000eb"
           
       - name: get CCE Cluster info
         run: |
-          kubectl version --short
+          kubectl version --client
           kubectl config view
           kubectl cluster-info
           kubectl get pod,svc --all-namespaces
